@@ -1,0 +1,14 @@
+<suite name="Suite" parallel="tests">
+  <test name="QA">
+  <parameter name="config" value="qa.properties"/>
+    <classes>
+      <class name="scripts.TestLogin"/>
+    </classes>
+  </test>
+  <test name="BASE">
+  <parameter name="config" value="base.properties"/>
+    <classes>
+      <class name="scripts.TestLogin"/>
+    </classes>
+  </test>
+</suite>

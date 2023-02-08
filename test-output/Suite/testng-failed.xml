@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="QA(failed)">
+    <parameter name="config" value="qa.properties"/>
+    <classes>
+      <class name="scripts.TestLogin">
+        <methods>
+          <include name="createReport"/>
+          <include name="initialSettings"/>
+          <include name="closeBrowser"/>
+          <include name="testMethod"/>
+          <include name="publishReport"/>
+        </methods>
+      </class> <!-- scripts.TestLogin -->
+    </classes>
+  </test> <!-- QA(failed) -->
+  <test thread-count="5" parallel="tests" name="BASE(failed)">
+    <parameter name="config" value="base.properties"/>
+    <classes>
+      <class name="scripts.TestLogin">
+        <methods>
+          <include name="initialSettings"/>
+          <include name="createReport"/>
+          <include name="closeBrowser"/>
+          <include name="testMethod"/>
+          <include name="publishReport"/>
+        </methods>
+      </class> <!-- scripts.TestLogin -->
+    </classes>
+  </test> <!-- BASE(failed) -->
+</suite> <!-- Failed suite [Suite] -->
