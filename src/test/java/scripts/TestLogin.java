@@ -10,6 +10,7 @@ public class TestLogin extends BaseTest{
 	@Test
 	public void testMethod() {
 		test.log(LogStatus.INFO, "testMethod");
+		//get username from xl sheet
 		String un = Utils.getXLData(dataPath, "Sheet1", 1,0);
 		test.log(LogStatus.INFO, "username is: "+un);
 	}
