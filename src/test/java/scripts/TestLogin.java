@@ -11,7 +11,7 @@ public class TestLogin extends BaseTest{
 	public void testMethod() {
 		test.log(LogStatus.INFO, "testMethod");
 		String un = Utils.getXLData(dataPath, "Sheet1", 1,0);
-		test.log(LogStatus.INFO, "username: "+un);
+		test.log(LogStatus.INFO, "un: "+un);
 	}
 
 }
